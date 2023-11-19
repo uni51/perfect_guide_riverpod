@@ -2,7 +2,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 's1.g.dart';
 
 @riverpod
-class S1Notofier extends _$S1Notofier {
+class S1Notifier extends _$S1Notifier {
   @override
   int build() {
     return 0;

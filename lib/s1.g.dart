@@ -6,20 +6,20 @@ part of 's1.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$s1NotofierHash() => r'c56ddbcb3eb2967469d3c390376a441eee699e40';
+String _$s1NotifierHash() => r'50807122c169d62988d5d4499fe8db162e4931b5';
 
-/// See also [S1Notofier].
-@ProviderFor(S1Notofier)
-final s1NotofierProvider =
-    AutoDisposeNotifierProvider<S1Notofier, int>.internal(
-  S1Notofier.new,
-  name: r's1NotofierProvider',
+/// See also [S1Notifier].
+@ProviderFor(S1Notifier)
+final s1NotifierProvider =
+    AutoDisposeNotifierProvider<S1Notifier, int>.internal(
+  S1Notifier.new,
+  name: r's1NotifierProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$s1NotofierHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$s1NotifierHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$S1Notofier = AutoDisposeNotifier<int>;
+typedef _$S1Notifier = AutoDisposeNotifier<int>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
