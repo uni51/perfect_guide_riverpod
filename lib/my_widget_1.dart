@@ -8,7 +8,7 @@ class MyWidget1 extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // S1 watch
+    // ⭐️ buildの中で状態をwatchする
     final s1 = ref.watch(s1NotifierProvider);
     // S1 listen
     ref.listen(
@@ -16,8 +16,8 @@ class MyWidget1 extends ConsumerWidget {
           (oldState, newState) {
         // スナックバーを表示
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('S1データが変更されました'),
+          SnackBar(
+            content: Text('$oldState から $newState へ変更されました'),
           ),
         );
       },
@@ -27,7 +27,7 @@ class MyWidget1 extends ConsumerWidget {
     // S1 ボタン
     final s1Button = ElevatedButton(
       onPressed: () {
-        // S1 ノティファイアを呼ぶ
+        // ⭐️ 画面を触ったら Notifier をread
         final notifier = ref.read(s1NotifierProvider.notifier);
         // S1 データを変更
         notifier.updateState();
