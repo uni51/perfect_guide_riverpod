@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:perfect_riverpod/keep_alive/state.dart';
+import 'package:perfect_riverpod/build_ondispose/state.dart';
 
 void main() {
   const app = MyApp();
